@@ -6,7 +6,7 @@ Discord bot boilerplate running under discord.js 13.1.5
 
 ### Windows
 
-* This bot is built on [discord.js](https://discord.js.org/) v12, so you'll need Node.js 12.0.0 (or newer) installed. Go to the [Node.js website](https://nodejs.org/) , download the latest version, open up the downloaded file, and follow the steps from the installer.
+* This bot is built on [discord.js](https://discord.js.org/) v13, so you'll need Node.js 15.0.0 (or newer) installed. Go to the [Node.js website](https://nodejs.org/) , download the latest version, open up the downloaded file, and follow the steps from the installer.
 
 * Download the code with [git](https://git-scm.com/download/win) `git clone https://github.com/Tuddual/discordbot-boilerplate.git` or download the lastest [ZIP file](https://github.com/Tuddual/discordbot-boilerplate/archive/main.zip).
 
