@@ -1,7 +1,7 @@
-const config = require('./config.json')
+const config = require('../config.json');
 const { Client, Intents, Collection } = require('discord.js');
 
-const { commandHandler: loadCommands } = require('./utils/dist.js')
+const { commandHandler: loadCommands } = require('./utils/dist.js');
 // Create the bot client 
 const client = new Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.DIRECT_MESSAGES] });
 
@@ -13,4 +13,4 @@ client.on('ready', async _ => {
     console.log(`Logged in as ${client.user.tag}!`);
 })
 
-client.login(config.Token)
+client.login(config.DiscordToken)

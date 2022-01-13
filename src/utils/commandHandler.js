@@ -1,9 +1,9 @@
-const { readdirSync: readFolder } = require('fs')
+const { readdirSync: readFolder } = require('fs');
 const { REST } = require('@discordjs/rest');
 const { Routes } = require('discord-api-types/v9');
-const config = require('../config.json')
+const config = require('../../config.json');
 
-const fetchCommands = () => readFolder('./commands').filter(file => file.endsWith('.js'))
+const fetchCommands = () => readFolder('./src/commands').filter(file => file.endsWith('.js'))
 
 const InitCommandListener = async client => {
     client.on('interactionCreate', async interaction => {
@@ -30,7 +30,7 @@ const InitCommands = async client => {
         console.log("There was an error loading the commands.", e)
     }
 
-    const rest = new REST({ version: '9' }).setToken(config.Token);
+    const rest = new REST({ version: '9' }).setToken(config.DiscordToken);
     try {
         await rest.put(
             Routes.applicationGuildCommands(client.user.id, config.GuildID),
